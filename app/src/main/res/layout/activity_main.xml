@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btn_detect"
+        android:text="Click Me!"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id= "@+id/camera_view"
+        android:layout_above="@+id/btn_detect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.wonderkiln.camerakit.CameraView>
+
+    <com.example.apple.mlkit.Helper.GraphicOverlay
+        android:id="@+id/graphicoverlay"
+        android:layout_above="@+id/btn_detect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="211dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+</RelativeLayout>
