@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <Button
         android:id="@+id/btn_detect"
-        android:text="Click Me!"
-        android:layout_width="match_parent"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content" />
+        android:layout_marginBottom="0dp"
+        android:text="Click Me!" />
 
     <com.wonderkiln.camerakit.CameraView
         android:id= "@+id/camera_view"
@@ -25,15 +29,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_switch"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="switch" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="211dp"
-        android:background="@android:color/holo_orange_light"
-        android:text="TextView"
-        android:visibility="invisible" />
+        android:layout_marginBottom="0dp"
+        android:text="Play" />
 
 </RelativeLayout>
