@@ -206,11 +206,11 @@ public class MainActivity extends AppCompatActivity {
             moodinformation = "I guess you are in blue mood.";
         }
         else if (mood > (float) 0.5 && mood < (float) 0.75) {
-            emotion = "RDQMG9QH9BTaOgU";
+            emotion = "PL4QNnZJr8sRNzSeygGocsBK9rVXhwy9W4";
             moodinformation = "It's time to relax and happy.";
         } else {
             emotion = "PLhGO2bt0EkwvRUioaJMLxrMNhU44lRWg8";
-            moodinformation = "You looks so happy:) Enjoy this wonderful day!";
+            moodinformation = "You look so happy:) Enjoy this wonderful day!";
         }
     }
     public void openActivity2() {
